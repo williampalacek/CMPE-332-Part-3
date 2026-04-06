@@ -1,0 +1,30 @@
+Conference Database
+The course project is intended to give students an opportunity to participate in all phases of the development of a database application. The development of the application will require you to use ER modeling techniques, relational modeling techniques, SQL, and to access your database via a web application. Projects will be done individually. 
+
+Project Requirements
+You are required to develop a database that can be used to hold information pertaining to a conference organization.  The database will store information about sessions offered at the conference, room allocations for the sessions, attendees, speakers, conference sponsorship and rooming arrangements (ie. hotel room allocations).
+
+Data Requirements
+Your database should be designed to handle the following details:
+
+The organizing committee is made up of a number of sub-committees, each committee having a name and a set of members.  A person can be on a number of different sub-committees.   We want to keep track of the organizing committee in the database, but this will be separate from the other details.  (That is, committee members will be listed separately from attendees, even if they are also a conference attendee).     Each sub-committee has one of it's members as the Chair of the committee.    Examples of sub-committees are the Program Committee, the Registration Committee, the Sponsorship committee etc.   
+The conference will be attended by a set of attendees.  Attendees are one of:  students, professionals or sponsors.  
+The rate for attending the conference is different for each category of attendees; Students pay $50, Professionals pay $100 and Sponsors attend for free.  
+Students (only) are housed in a hotel room and they room with 1-3 other students.    We need to keep track of the rooming list for the hotel -- that is, who is in which room.  Not all students require rooms.  Rooms are distinguished by the room number and the number of beds in the room (one or two).
+Sponsors attend the conference on behalf of one of the sponsoring companies.
+Sponsors are companies that support the conference financially.  They are one of Platinum ($10000), Gold ($5000), Silver ($3000) or Bronze ($1000) sponsors.  Companies can send an unlimited number of sponsor attendees to the conference but each company sends at least one representative.
+As part of their sponsorship, sponsors are able to use the mailing list for the attendees to send out promotional information.  Platinum sponsors can send 5 emails, Gold can send 4 emails and Silver can send 3.  Bronze sponsors are not allowed to send emails.  The database should keep track of how many emails each sponsoring company has sent. 
+Sponsoring companies are able to post job ads.  Your database should keep track of these ads by recording the job title, the location (city and province) of the job and the pay rate (per year).    Of course, you should also note which company posted the job! 
+The conference runs for 2 days and there are sessions scheduled throughout each day.  Each session has a start time, end time and a room location.  Sessions will take place in parallel (for example, there may be more than one session scheduled for 2PM on Saturday).   The schedule information should be captured in the database.
+You will also want to record the name of the session and the names of the speaker(s).  Speakers will always be included in the conference attendance list. 
+Show both the cardinality of the relationships (use the 1:1, 1:N, N:M notation on the lines as shown in class) and the participation constraints.  For each entity, underline the key you would pick to be the primary key (if it is a weak entity, remember to use a dashed underline). If it will be a composite key, underline all attributes that will make up the composite key.
+
+You are encouraged to use the notations shown in the class. You can use other notations, but in that case you need to explain them in detail. Do NOT use UML-like notation.  Entities should be shown as boxes, attributes as ovals etc. 
+
+You may hand-draw your diagrams as long as the image that you submit (a single image) can be clearly viewed. 
+
+
+What to Submit
+Submit the ER diagram in either .pdf or .jpg format.  It must be submitted as a single document!  You can screenshot if you wish or take a picture, but your submission MUST be legible.   (Note that by "single document", I mean that the entire image must be visible in a single document).
+
+If you have made assumptions for things not included in the requirements, include a list of assumptions along with your ER diagram.

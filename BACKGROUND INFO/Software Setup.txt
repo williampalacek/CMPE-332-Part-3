@@ -1,0 +1,40 @@
+This assignment is to ensure that you are able to install and use the software required for this course.  Follow the install instructions posted under "Setup the Software Environment" found on the Week 1 contents page.   It is very important that you do this assignment and report any issues to us.  You will need this software environment in order to be successful in the course and we need to identify issues early on so that we can find solutions if there are individuals with technical problems.  If you are installing on a M1 Mac computer please check the note at the bottom of this page regarding installation on these computers. 
+
+Once you have XAMPP installed do the following:
+
+Start XAMPP and start the Apache and the MySQL services.   Open the phpmyadmin page (on Windows, click the admin button associated with the MySQL service) and you should see something like this:
+
+phpmyadmin
+
+Next, go to the SQL tab and type "create database cisc332" in the text box.  (You may use cmpe332 for your database name if you wish!)   Hit the "go" button in the bottom right.
+
+You should see your new database join the list of databases in the left sidebar of the window.  Take a screenshot of this window showing that you have created a new database and save it.
+
+Now, check to ensure that your Apache server is running.  Apache is a web server, that is, it is an application that takes requests for a particular file and "serves" it to the requestor.  This is how websites work.  A url specifies where the webserver is found and the page that you are requesting.  You now have a webserver running on your own machine.  Currently it only works for local requests, that is, from your own machine.  I suggest that you leave it this way to avoid any potential security issues.   To check to see that it is running, type "http://localhost" into your browser.  You should see something like this:
+
+apache welcome window
+
+If you had to change the port that Apache is running on, you will need to type http://localhost:XXX   (where XXX is the port number).
+
+Now let's create a website for your web server to "serve".  Create a flat file (text file -- not a word document, nor a pdf, just straight text using something like edit or wordpad).  In this file put one line:  <h1>Hello World</h1>.  Locate the htdocs folder which you will find in the folder where you installed xampp.  (For me this is c:/xampp/htdocs).  Save the file you just created in the htdocs folder and call it helloWorld.html.
+
+When you display the page, you should NOT see the <h1></h1> tags.  If you do, your file is either not a text file or the extension is incorrect.  It must be a .html (or .htm) file.  
+
+Now point your browser to http://localhost/helloWorld.html.  This is requesting that the web server residing on the local machine serve up the page called helloWorld.html.  If you wish to make a fancier website, you can learn a bit of web programming at w3schools.com.    (It is not necessary to add to this site for full marks).
+
+Screenshot your website. Be sure to include the url in your picture.
+
+Installation on M1 Mac Computers
+Thanks to a former student for this information.  (I have not verified since I do not own an M1 Mac Computer, but the student went through the struggles and made the following discoveries and has graciously shared them with the class).  UPDATE:  Someone from Winter 2023 said that this may have been fixed now as it installed fine on their M1 Mac.
+
+The mac download on the front page of https://www.apachefriends.org/ installs a bz2 file rather than a dmg file. After much messing around I'm still not sure what to do with the bz2 file.  (Update from another student who says "You can simply change the “bz2” extension to “dmg”")
+The additional mac download options listed on https://www.apachefriends.org/download.html also appear to download bz2 files. 
+Solution: Underneath the list of Mac OSX download options is a button called More Downloads. Clicking on this link brings you to https://sourceforge.net/projects/xampp/files/ where the appropriate Mac OSX dmg files can be found. 
+According to this post on the apache friends forum from December 29: https://community.apachefriends.org/f/viewtopic.php?t=80239&p=271270, XAMPP vm does not work on Mac M1 computers
+Solution: Download the installer version of XAMPP rather than the vm version. I personally downloaded version 8.0.0-3 
+The XAMPP application for the installer version is called manager-osx
+Located in the XAMPP folder in the applications folder
+This version comes with only 3 servers: MySQL Database, ProFTPD, and Apache Web Server
+After installation DO NOT start the ProFTPD server it instantly crashes your computer!
+What to Submit
+Submit the two screenshots -- one showing that you have created a database and one showing that you have a website up and running. 
