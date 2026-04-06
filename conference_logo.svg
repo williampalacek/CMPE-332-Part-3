@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 80" width="120" height="80">
+  <!-- Background circle -->
+  <circle cx="40" cy="40" r="36" fill="#4a90d9" opacity="0.15"/>
+  <!-- Podium -->
+  <rect x="28" y="38" width="24" height="18" rx="2" fill="#4a90d9"/>
+  <rect x="34" y="30" width="12" height="10" rx="2" fill="#2c5f8a"/>
+  <!-- Microphone -->
+  <rect x="39" y="26" width="2" height="6" rx="1" fill="#fff"/>
+  <ellipse cx="40" cy="25" rx="3" ry="4" fill="#fff"/>
+  <!-- Audience dots -->
+  <circle cx="15" cy="52" r="3" fill="#1a3a5c" opacity="0.7"/>
+  <circle cx="23" cy="55" r="3" fill="#1a3a5c" opacity="0.7"/>
+  <circle cx="57" cy="52" r="3" fill="#1a3a5c" opacity="0.7"/>
+  <circle cx="65" cy="55" r="3" fill="#1a3a5c" opacity="0.7"/>
+  <circle cx="19" cy="62" r="3" fill="#1a3a5c" opacity="0.5"/>
+  <circle cx="61" cy="62" r="3" fill="#1a3a5c" opacity="0.5"/>
+  <!-- Text -->
+  <text x="82" y="36" font-family="Arial,sans-serif" font-size="9" font-weight="bold" fill="#1a3a5c">TECH</text>
+  <text x="78" y="48" font-family="Arial,sans-serif" font-size="9" font-weight="bold" fill="#2c5f8a">CONF</text>
+  <text x="76" y="60" font-family="Arial,sans-serif" font-size="7" fill="#4a90d9">2025</text>
+</svg>

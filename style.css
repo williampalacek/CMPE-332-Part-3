@@ -1,0 +1,219 @@
+/* ============================================================
+   Conference Database Application — Stylesheet
+   ============================================================ */
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #eef2f7;
+    color: #222;
+    min-height: 100vh;
+}
+
+/* ---- Header ---- */
+header {
+    background: linear-gradient(135deg, #1a3a5c 0%, #2c5f8a 100%);
+    color: #fff;
+    padding: 18px 32px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+}
+header img {
+    height: 64px;
+    width: auto;
+}
+header .header-text h1 {
+    font-size: 1.7rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+header .header-text p {
+    font-size: 0.9rem;
+    opacity: 0.85;
+    margin-top: 3px;
+}
+
+/* ---- Navigation ---- */
+nav {
+    background: #14304e;
+    padding: 0 24px;
+}
+nav a {
+    display: inline-block;
+    color: #c8dff5;
+    text-decoration: none;
+    padding: 12px 16px;
+    font-size: 0.88rem;
+    transition: background 0.2s, color 0.2s;
+}
+nav a:hover, nav a.active {
+    background: #2c5f8a;
+    color: #fff;
+}
+
+/* ---- Main content ---- */
+main {
+    max-width: 1050px;
+    margin: 32px auto;
+    padding: 0 20px 40px;
+}
+
+h2 {
+    font-size: 1.4rem;
+    color: #1a3a5c;
+    border-bottom: 3px solid #2c5f8a;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 1.1rem;
+    color: #1a3a5c;
+    margin: 24px 0 10px;
+}
+
+p { margin-bottom: 12px; line-height: 1.6; }
+
+/* ---- Cards (home page) ---- */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 18px;
+    margin-top: 24px;
+}
+.card {
+    background: #fff;
+    border: 1px solid #d0dce9;
+    border-radius: 8px;
+    padding: 22px 18px;
+    text-align: center;
+    text-decoration: none;
+    color: #1a3a5c;
+    transition: box-shadow 0.2s, transform 0.2s;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.07);
+}
+.card:hover {
+    box-shadow: 0 4px 16px rgba(44,95,138,0.18);
+    transform: translateY(-2px);
+}
+.card .card-icon { font-size: 2rem; margin-bottom: 10px; }
+.card .card-title { font-weight: 600; font-size: 0.95rem; }
+.card .card-desc  { font-size: 0.8rem; color: #555; margin-top: 5px; }
+
+/* ---- Forms ---- */
+.form-box {
+    background: #fff;
+    border: 1px solid #d0dce9;
+    border-radius: 8px;
+    padding: 28px 32px;
+    max-width: 540px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.07);
+}
+.form-group { margin-bottom: 16px; }
+.form-group label {
+    display: block;
+    font-weight: 600;
+    font-size: 0.88rem;
+    margin-bottom: 5px;
+    color: #1a3a5c;
+}
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="number"],
+.form-group input[type="time"],
+.form-group select {
+    width: 100%;
+    padding: 9px 12px;
+    border: 1px solid #b0c4d8;
+    border-radius: 5px;
+    font-size: 0.92rem;
+    background: #f8fafc;
+    transition: border-color 0.2s;
+}
+.form-group input:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: #2c5f8a;
+    background: #fff;
+}
+.form-group .hint {
+    font-size: 0.78rem;
+    color: #777;
+    margin-top: 3px;
+}
+
+/* ---- Buttons ---- */
+.btn {
+    display: inline-block;
+    padding: 9px 24px;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.92rem;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.2s;
+}
+.btn-primary   { background: #2c5f8a; color: #fff; }
+.btn-primary:hover   { background: #1a3a5c; }
+.btn-danger    { background: #c0392b; color: #fff; }
+.btn-danger:hover    { background: #922b21; }
+.btn-secondary { background: #6c8fa8; color: #fff; }
+.btn-secondary:hover { background: #4a6f8a; }
+
+/* ---- Alerts ---- */
+.alert {
+    padding: 12px 18px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 0.92rem;
+}
+.alert-success { background: #d4edda; color: #155724; border: 1px solid #c3e6cb; }
+.alert-error   { background: #f8d7da; color: #721c24; border: 1px solid #f5c6cb; }
+.alert-info    { background: #d1ecf1; color: #0c5460; border: 1px solid #bee5eb; }
+
+/* ---- Tables ---- */
+.table-wrap { overflow-x: auto; }
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.07);
+    margin-bottom: 24px;
+    font-size: 0.9rem;
+}
+table thead tr { background: #2c5f8a; color: #fff; }
+table thead th { padding: 12px 14px; text-align: left; font-weight: 600; }
+table tbody tr:nth-child(even) { background: #f0f5fb; }
+table tbody tr:hover { background: #dce9f6; }
+table tbody td { padding: 10px 14px; border-bottom: 1px solid #e2eaf3; }
+table tbody tr:last-child td { border-bottom: none; }
+
+.badge {
+    display: inline-block;
+    padding: 2px 10px;
+    border-radius: 12px;
+    font-size: 0.78rem;
+    font-weight: 700;
+}
+.badge-platinum { background: #e8e0f5; color: #5b3fa0; }
+.badge-gold     { background: #fff3cd; color: #856404; }
+.badge-silver   { background: #e9ecef; color: #495057; }
+.badge-bronze   { background: #fde5d4; color: #7b3f00; }
+.badge-chair    { background: #d4edda; color: #155724; }
+
+/* ---- Footer ---- */
+footer {
+    text-align: center;
+    padding: 18px;
+    font-size: 0.8rem;
+    color: #777;
+    border-top: 1px solid #d0dce9;
+    margin-top: 40px;
+    background: #fff;
+}
